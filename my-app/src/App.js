@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 export const App = () => {
+	const thisYear = new Date().getFullYear();
+
 	return (
 		<div className="App">
 			<header className="App-header">
@@ -17,7 +19,9 @@ export const App = () => {
 				>
 					Learn React
 				</a>
+				<p>{thisYear}г.</p>
 			</header>
 		</div>
 	);
 };
+// весь код декларативный?
